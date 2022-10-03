@@ -40,8 +40,7 @@
 	}
 }
 
-.modal__close-btn {
-	@extend %btn;
+.modal__btn-close {
 	position: absolute;
 	top: 8px;
 	right: 8px;
@@ -50,17 +49,21 @@
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	background-color: inherit;
+	cursor: pointer;
+
 	&:hover,
 	&:focus {
 		fill: var(--accent-color);
 	}
 }
 
-.modal__submit-btn {
+.modal__btn-submit {
 	@extend %btn;
 	margin: 30px auto 0 auto;
 	width: 200px;
 	height: 50px;
+	box-shadow: none;
+
 	&:hover,
 	&:focus {
 		background-color: var(--btn-background-color);

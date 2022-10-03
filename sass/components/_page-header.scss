@@ -1,9 +1,10 @@
 .page-header {
-	width: 1600px;
-	margin: 0 auto;
+	@extend %page-container;
+	padding: 0;
 	border-bottom: 1px solid var(--prm-border-color);
 
 	&__container {
+		@extend %content-container;
 		display: flex;
 		justify-content: space-between;
 	}

@@ -1,12 +1,12 @@
 .page-footer {
-	width: 1600px;
-	margin: 0 auto;
+	@extend %page-container;
 	padding-top: 60px;
 	padding-bottom: 60px;
 
 	background-color: var(--third-background-color);
 
 	&__container {
+		@extend %content-container;
 		display: flex;
 		align-items: baseline;
 	}
